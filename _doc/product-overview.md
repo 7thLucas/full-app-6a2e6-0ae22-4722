@@ -47,3 +47,7 @@ Premium, modern, and conversion-focused — yet built for the mass market. Earns
 - Add to Cart interaction
 - Dark mode toggle
 - Mobile-optimized, app-style layout
+
+## Planned Enhancements (Requested — not yet built)
+- **Mid-range pricing strategy** — re-price the catalog into an affordable band aimed at middle-class shoppers (value-for-money positioning rather than premium-priced goods).
+- **Multi-language support** — in-app language switcher with full content localization, starting with Telugu, Hindi, English, and Tamil, and extensible to more Indian and global languages.
