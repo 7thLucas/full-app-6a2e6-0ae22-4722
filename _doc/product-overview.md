@@ -1,6 +1,7 @@
-# Product Overview — E-Commerce Marketing Platform
+# Product Overview — Vibecart
 
 ## Product Identity
+**Name**: Vibecart
 **Category**: E-Commerce Marketing Web App & Website
 **Tagline**: "Where Great Deals Meet a Premium Experience"
 **Inspiration**: Flipkart · Amazon · Meesho
