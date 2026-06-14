@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f4f5fa;
+    --foreground: #1a1f3c;
+    --card: #ffffff;
+    --card-foreground: #1a1f3c;
+    --popover: #ffffff;
+    --popover-foreground: #1a1f3c;
+    --primary: #1a1f5e;
+    --primary-foreground: #ffffff;
+    --secondary: #2d3282;
+    --secondary-foreground: #ffffff;
+    --muted: #e8eaf6;
+    --muted-foreground: #6b7280;
+    --accent: #ff6b00;
+    --accent-foreground: #ffffff;
+    --destructive: #ff3d6b;
+    --destructive-foreground: #fafafa;
+    --border: #e2e4f0;
+    --input: #e2e4f0;
+    --ring: #1a1f5e;
+    --radius: 0.75rem;
+    --chart-1: #ff6b00;
+    --chart-2: #ff3d6b;
+    --chart-3: #1a1f5e;
+    --chart-4: #22c55e;
+    --chart-5: #8b5cf6;
+    --navbar-background: #1a1f5e;
+    --sidebar-background: #f4f5fa;
+    --sidebar-foreground: #1a1f3c;
+    --sidebar-primary: #1a1f5e;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #e8eaf6;
+    --sidebar-accent-foreground: #1a1f3c;
+    --sidebar-border: #e2e4f0;
+    --sidebar-ring: #1a1f5e;
+    /* Vibecart custom */
+    --vc-primary: #1a1f5e;
+    --vc-secondary: #2d3282;
+    --vc-accent: #ff6b00;
+    --vc-sale: #ff3d6b;
+    --vc-bg: #f4f5fa;
+    --vc-card: #ffffff;
+    --vc-text: #1a1f3c;
+    --vc-text-muted: #6b7280;
+    --vc-green: #22c55e;
+  }
+
+  .dark {
+    --background: #0d0f1a;
+    --foreground: #e8eaf6;
+    --card: #1a1d2e;
+    --card-foreground: #e8eaf6;
+    --popover: #1a1d2e;
+    --popover-foreground: #e8eaf6;
+    --primary: #3b47d4;
+    --primary-foreground: #ffffff;
+    --secondary: #2d3282;
+    --secondary-foreground: #e8eaf6;
+    --muted: #252842;
+    --muted-foreground: #9ca3af;
+    --accent: #ff6b00;
+    --accent-foreground: #ffffff;
+    --destructive: #ff3d6b;
+    --destructive-foreground: #fafafa;
+    --border: #2a2e4a;
+    --input: #252842;
+    --ring: #3b47d4;
+    --chart-1: #ff6b00;
+    --chart-2: #ff3d6b;
+    --chart-3: #3b47d4;
+    --chart-4: #22c55e;
+    --chart-5: #a78bfa;
+    --navbar-background: #0d0f1a;
+    --sidebar-background: #0d0f1a;
+    --sidebar-foreground: #e8eaf6;
+    --sidebar-primary: #3b47d4;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #252842;
+    --sidebar-accent-foreground: #e8eaf6;
+    --sidebar-border: #2a2e4a;
+    --sidebar-ring: #3b47d4;
+    /* Vibecart custom dark */
+    --vc-primary: #3b47d4;
+    --vc-secondary: #2d3282;
+    --vc-accent: #ff8c00;
+    --vc-sale: #ff3d6b;
+    --vc-bg: #0d0f1a;
+    --vc-card: #1a1d2e;
+    --vc-text: #e8eaf6;
+    --vc-text-muted: #9ca3af;
+    --vc-green: #22c55e;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Poppins', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Hide scrollbar for native mobile feel */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Vibecart Carousel Animations */
+@keyframes vc-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes vc-slide-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+}
+
+@keyframes vc-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes vc-bounce-in {
+  0% { transform: scale(0.95); opacity: 0; }
+  60% { transform: scale(1.02); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.vc-slide-in {
+  animation: vc-slide-in 0.4s ease-out forwards;
+}
+
+.vc-fade-in {
+  animation: vc-fade-in 0.3s ease-out forwards;
+}
+
+.vc-bounce-in {
+  animation: vc-bounce-in 0.3s ease-out forwards;
+}
+
+/* Product card hover */
+.vc-product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vc-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(26, 31, 94, 0.15);
+}
+
+/* Button press */
+.vc-btn-press:active {
+  transform: scale(0.96);
+}
+
+/* Category tap */
+.vc-category-item:active {
+  transform: scale(0.92);
+}
+
+/* Smooth theme transition */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+/* Override for animations to not conflict */
+.vc-slide-in,
+.vc-fade-in,
+.vc-bounce-in,
+.vc-product-card,
+.vc-btn-press,
+.vc-category-item {
+  transition-property: transform, box-shadow, background-color, border-color, color, opacity;
+}
