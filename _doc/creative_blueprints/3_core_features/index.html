@@ -1,0 +1,81 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full p-10 flex flex-col gap-4">
+
+    <!-- Header row -->
+    <div class="flex items-center justify-between flex-shrink-0">
+      <div class="flex items-center gap-3">
+        <div class="w-1 h-7 rounded-full" style="background: #f97316;"></div>
+        <p class="text-xs font-bold uppercase tracking-widest" style="color: #f97316;">Core Features</p>
+      </div>
+      <!-- Persona chips -->
+      <div class="flex items-center gap-2">
+        <span class="px-4 py-1.5 rounded-full text-xs font-bold text-white" style="background: #4f46e5;">Shopper</span>
+        <span class="px-4 py-1.5 rounded-full text-xs font-semibold" style="color: #64748b; background: #f1f5f9;">Marketing Team</span>
+      </div>
+    </div>
+
+    <!-- Headline -->
+    <div class="flex-shrink-0">
+      <h2 class="font-bold" style="font-size: 1.35rem; color: #0f172a;">Six Features That Drive Every Sale</h2>
+      <p class="text-xs mt-1" style="color: #94a3b8;">Every element earns its place — search, discover, evaluate, and buy in one fluid motion.</p>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-3 flex-1 min-h-0">
+
+      <!-- Smart Top Bar -->
+      <div class="rounded-xl p-4 flex flex-col gap-2 border" style="border-color: #e2e8f0; background: #f8fafc;">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center text-base flex-shrink-0"
+             style="background: #ede9fe;">🔍</div>
+        <h4 class="text-sm font-bold" style="color: #1e293b;">Smart Top Bar</h4>
+        <p class="text-xs leading-relaxed" style="color: #64748b;">Voice search, cart badge, and user profile — persistent, prominent, and always in reach.</p>
+      </div>
+
+      <!-- Hero Carousel -->
+      <div class="rounded-xl p-4 flex flex-col gap-2 border" style="border-color: #fed7aa; background: #fff7ed;">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center text-base flex-shrink-0"
+             style="background: #ffedd5;">🎠</div>
+        <h4 class="text-sm font-bold" style="color: #1e293b;">Hero Deal Carousel</h4>
+        <p class="text-xs leading-relaxed" style="color: #64748b;">Auto-sliding full-width banners — "50% OFF" campaigns, new arrivals, trending promos.</p>
+      </div>
+
+      <!-- Category Grid -->
+      <div class="rounded-xl p-4 flex flex-col gap-2 border" style="border-color: #e2e8f0; background: #f8fafc;">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center text-base flex-shrink-0"
+             style="background: #ecfdf5;">🏷️</div>
+        <h4 class="text-sm font-bold" style="color: #1e293b;">Category Discovery</h4>
+        <p class="text-xs leading-relaxed" style="color: #64748b;">Horizontal scroll of rounded icons — Fashion, Electronics, Beauty, Home Décor.</p>
+      </div>
+
+      <!-- Product Cards -->
+      <div class="rounded-xl p-4 flex flex-col gap-2 border" style="border-color: #e2e8f0; background: #f8fafc;">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center text-base flex-shrink-0"
+             style="background: #fef9c3;">🛒</div>
+        <h4 class="text-sm font-bold" style="color: #1e293b;">Product Showcase Cards</h4>
+        <p class="text-xs leading-relaxed" style="color: #64748b;">Image · price · strikethrough · discount % · star rating · one-tap Add to Cart.</p>
+      </div>
+
+      <!-- Dark Mode -->
+      <div class="rounded-xl p-4 flex flex-col gap-2 border" style="border-color: #e2e8f0; background: #f8fafc;">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center text-base flex-shrink-0"
+             style="background: #f1f5f9;">🌙</div>
+        <h4 class="text-sm font-bold" style="color: #1e293b;">Dark Mode Toggle</h4>
+        <p class="text-xs leading-relaxed" style="color: #64748b;">Premium light/dark switch for extended, eye-friendly browsing at any hour.</p>
+      </div>
+
+      <!-- Bottom Nav -->
+      <div class="rounded-xl p-4 flex flex-col gap-2 border" style="border-color: #ddd6fe; background: #f5f3ff;">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center text-base flex-shrink-0"
+             style="background: #ede9fe;">📱</div>
+        <h4 class="text-sm font-bold" style="color: #1e293b;">Sticky Bottom Nav</h4>
+        <p class="text-xs leading-relaxed" style="color: #64748b;">Always-visible app bar — Home · Categories · My Cart · Orders · Profile.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
