@@ -1,0 +1,77 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(1, 1fr); }
+  .mode-landscape .sl-bottom { flex-direction: row; align-items: stretch; }
+  .mode-portrait .sl-bottom { flex-direction: column; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full p-10 flex flex-col gap-5">
+
+    <!-- Header -->
+    <div class="flex items-center gap-3 flex-shrink-0">
+      <div class="w-1 h-7 rounded-full" style="background: #4f46e5;"></div>
+      <p class="text-xs font-bold uppercase tracking-widest" style="color: #4f46e5;">Business Value</p>
+      <div class="flex-1 h-px" style="background: #e2e8f0;"></div>
+    </div>
+
+    <div class="flex-shrink-0">
+      <h2 class="font-bold" style="font-size: 1.35rem; color: #0f172a;">Why This Platform Moves the Needle</h2>
+      <p class="text-xs mt-1" style="color: #94a3b8;">Four design-led outcomes that directly impact discovery, conversion, and retention.</p>
+    </div>
+
+    <!-- 2×2 metric cards -->
+    <div class="sl-grid grid gap-4 flex-1 min-h-0">
+
+      <!-- Discovery Speed -->
+      <div class="rounded-2xl p-5 flex flex-col justify-between"
+           style="background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%); border: 1px solid #bfdbfe;">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest" style="color: #3730a3;">Discovery Speed</span>
+          <p class="text-lg font-extrabold mt-1" style="color: #1e1b4b;">Voice + Category Grid</p>
+        </div>
+        <p class="text-xs leading-relaxed mt-2" style="color: #3730a3;">
+          Smart search and a horizontally scrollable category strip collapse the shopper's path from landing to product — fewer taps, less time, higher intent.
+        </p>
+      </div>
+
+      <!-- Conversion Signal -->
+      <div class="rounded-2xl p-5 flex flex-col justify-between"
+           style="background: linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%); border: 1px solid #fcd34d;">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest" style="color: #b45309;">Conversion Signals</span>
+          <p class="text-lg font-extrabold mt-1" style="color: #78350f;">Discount % + Star Ratings</p>
+        </div>
+        <p class="text-xs leading-relaxed mt-2" style="color: #92400e;">
+          Bold discount tags and transparent star badges give shoppers the social proof and pricing clarity they need to commit — directly at the point of decision.
+        </p>
+      </div>
+
+      <!-- Campaign Power -->
+      <div class="rounded-2xl p-5 flex flex-col justify-between"
+           style="background: linear-gradient(135deg, #fdf4ff 0%, #ede9fe 100%); border: 1px solid #d8b4fe;">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest" style="color: #7e22ce;">Campaign Power</span>
+          <p class="text-lg font-extrabold mt-1" style="color: #3b0764;">Hero Carousel</p>
+        </div>
+        <p class="text-xs leading-relaxed mt-2" style="color: #6b21a8;">
+          Marketing teams own above-the-fold with full-width deal banners — launch, update, and retire promotions without any engineering cycle.
+        </p>
+      </div>
+
+      <!-- Brand Equity -->
+      <div class="rounded-2xl p-5 flex flex-col justify-between"
+           style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border: 1px solid #86efac;">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest" style="color: #15803d;">Brand Equity</span>
+          <p class="text-lg font-extrabold mt-1" style="color: #14532d;">App-Grade Polish</p>
+        </div>
+        <p class="text-xs leading-relaxed mt-2" style="color: #166534;">
+          Dark mode, smooth transitions, and a sticky nav position the brand alongside Flipkart and Amazon — earning the premium trust that drives repeat visits.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
