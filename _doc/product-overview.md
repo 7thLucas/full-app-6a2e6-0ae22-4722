@@ -39,7 +39,7 @@ A modern, premium e-commerce marketing platform combining:
 - **Layout**: Mobile-first, app-grade — sticky header, sticky bottom nav, fluid product grid, safe inner padding throughout
 
 ## Brand & Tone
-Premium, modern, and conversion-focused. Earns the visual authority of top-tier e-commerce platforms while remaining accessible, fast, and aspirational for every shopper segment.
+Premium, modern, and conversion-focused — yet built for the mass market. Earns the visual authority of top-tier e-commerce platforms while staying genuinely affordable and accessible for India's middle class, with the inclusivity of regional-language support (Meesho-style reach, Amazon-grade polish).
 
 ## Phase 1 Scope (MVP)
 - Full home page with all 6 UI sections (Top Bar, Hero Carousel, Category Grid, Product Grid, Bottom Nav, Dark Mode)
