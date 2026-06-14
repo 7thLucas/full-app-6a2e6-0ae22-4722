@@ -1,0 +1,112 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full p-10 flex flex-col gap-5">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between flex-shrink-0">
+      <div class="flex items-center gap-3">
+        <div class="w-1 h-7 rounded-full" style="background: #4f46e5;"></div>
+        <p class="text-xs font-bold uppercase tracking-widest" style="color: #4f46e5;">North Star</p>
+      </div>
+      <span class="px-3 py-1 rounded-full text-xs font-semibold"
+            style="color: #92400e; background: #fef3c7; border: 1px solid #fde68a;">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- Headline + Operation definition -->
+    <div class="flex-shrink-0">
+      <h2 class="font-bold" style="font-size: 1.35rem; color: #0f172a;">
+        The Metric This Platform Lives By: <span style="color: #4f46e5;">Cart Additions / Week</span>
+      </h2>
+      <p class="text-xs mt-1.5 leading-relaxed" style="color: #64748b; max-width: 640px;">
+        A <strong>Verified Operation</strong> is a shopper tapping "Add to Cart" in the deployed app — a real, completed, domain-meaningful action that directly precedes revenue. Not a page view, not a login.
+      </p>
+    </div>
+
+    <!-- Main content: formula + value side by side -->
+    <div class="flex gap-5 flex-1 min-h-0">
+
+      <!-- Left: Formula block -->
+      <div class="flex-1 rounded-2xl p-6 flex flex-col gap-4 min-h-0"
+           style="background: #f8fafc; border: 1px solid #e2e8f0;">
+
+        <p class="text-xs font-bold uppercase tracking-widest" style="color: #475569;">Weekly Verified Operations (WVO) — Formula</p>
+
+        <!-- Assumption chips + formula -->
+        <div class="flex flex-col gap-3">
+
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold"
+                  style="background: #fef9c3; color: #854d0e; border: 1px dashed #d97706;">
+              Assumption — adjust: Weekly active shoppers = <strong>A</strong>
+            </span>
+          </div>
+
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold"
+                  style="background: #fef9c3; color: #854d0e; border: 1px dashed #d97706;">
+              Assumption — adjust: Sessions per shopper per week = <strong>S</strong>
+            </span>
+          </div>
+
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold"
+                  style="background: #fef9c3; color: #854d0e; border: 1px dashed #d97706;">
+              Assumption — adjust: Avg cart additions per session = <strong>C</strong>
+            </span>
+          </div>
+
+          <!-- Formula display -->
+          <div class="rounded-xl p-4 mt-1" style="background: #1e1b4b;">
+            <p class="text-xs font-mono" style="color: #a5b4fc;">A shoppers × S sessions/wk × C adds/session</p>
+            <p class="text-lg font-extrabold text-white mt-1">= <span style="color: #fb923c;">A × S × C</span> cart additions / week</p>
+            <p class="text-xs mt-1" style="color: #6366f1;">Example: 500 shoppers × 2 sessions × 3 adds = <strong style="color: #fb923c;">3,000 WVO / week</strong></p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right: Value block -->
+      <div class="flex-1 rounded-2xl p-6 flex flex-col gap-4 min-h-0"
+           style="background: #f5f3ff; border: 1px solid #ddd6fe;">
+
+        <p class="text-xs font-bold uppercase tracking-widest" style="color: #6d28d9;">Projected Value per Week</p>
+
+        <div class="flex flex-col gap-3">
+
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold"
+                  style="background: #fef9c3; color: #854d0e; border: 1px dashed #d97706;">
+              Assumption — adjust: Purchase conversion rate = <strong>R%</strong>
+            </span>
+          </div>
+
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-semibold"
+                  style="background: #fef9c3; color: #854d0e; border: 1px dashed #d97706;">
+              Assumption — adjust: Average order value = <strong>₹V</strong>
+            </span>
+          </div>
+
+          <!-- Value formula -->
+          <div class="rounded-xl p-4 mt-1" style="background: #4c1d95;">
+            <p class="text-xs font-mono" style="color: #c4b5fd;">WVO × R% × ₹V = weekly revenue facilitated</p>
+            <p class="text-lg font-extrabold text-white mt-1">Weekly: <span style="color: #fb923c;">WVO × R% × ₹V</span></p>
+            <p class="text-sm font-bold mt-1" style="color: #a78bfa;">Annual: × 52 weeks</p>
+            <p class="text-xs mt-2" style="color: #c4b5fd;">Example: 3,000 × 5% × ₹1,200 = <strong style="color: #fb923c;">₹1,80,000 / week</strong> → <strong style="color: #fb923c;">₹93.6L / year</strong></p>
+          </div>
+
+        </div>
+
+        <!-- Framing note -->
+        <p class="text-xs leading-relaxed mt-auto" style="color: #7c3aed;">
+          Fill in your real numbers to convert projections into your platform's actual north star target.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
