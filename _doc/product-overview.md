@@ -7,7 +7,7 @@
 **Inspiration**: Flipkart · Amazon · Meesho
 
 ## Users
-- **Online Shoppers** (Primary) — Buyers seeking fast product discovery, live deal alerts, and a frictionless add-to-cart experience across Fashion, Electronics, Beauty, and Home Décor.
+- **Online Shoppers** (Primary) — India's value-conscious middle class across metros and Tier-2/Tier-3 towns (and price-sensitive shoppers worldwide), seeking affordable, mid-range products and a frictionless, deal-led shopping experience — ideally in their own language — across Fashion, Electronics, Beauty, and Home Décor.
 - **Marketing / Campaign Teams** (Secondary) — Brand operators who manage deal banners, sliding hero campaigns, and promotional discount launches to drive purchase intent and revenue.
 
 ## Problem
